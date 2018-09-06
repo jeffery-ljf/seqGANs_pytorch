@@ -2,17 +2,16 @@
 from torch import nn
 import torch
 class Discriminator(nn.Module):
-    def __init__(self, sequence_length, num_classes, vocab_size, embedding_size, filter_sizes, num_filters, l2_reg_lambda=0.0):
+    def __init__(self, sequence_length, num_classes, vocab_size, embedding_size, filter_sizes, num_filters):
         super().__init__()
         self.vocab_size = vocab_size
-        self.l2_reg_lambda = l2_reg_lambda
-        self.conv_pools = []
+        self.conv_pools = nn.ModuleList()
         for filter_size, num_filter in zip(filter_sizes,num_filters):
             # Convolution Layer and Pool Layer
             model = [nn.Conv2d(in_channels=1, out_channels=num_filter, kernel_size=(filter_size, embedding_size), stride=1),
                      nn.ReLU(True),
                      nn.MaxPool2d(kernel_size=(sequence_length - filter_size + 1, 1))]
-            self.conv_pools.append(nn.Sequential(*model).cuda())#cuda
+            self.conv_pools.append(nn.Sequential(*model))
         total_features = sum(num_filters)
         # Highway Layer
         self.highway_linear_H = nn.Sequential(*[nn.Linear(in_features=total_features, out_features=total_features, bias=True),

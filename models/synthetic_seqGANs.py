@@ -5,9 +5,9 @@ import visdom
 from torch import nn
 from discriminator import Discriminator
 from generator import Generator
-from datas.dataset import Quatrains
+from datas.dataset import DataSet_Syn
 from torch.utils.data import DataLoader
-class SEQGANs(nn.Module):
+class SEQGANs_syn(nn.Module):
     def __init__(self):
         super().__init__()
         self.l2_reg_lambda = 0.2
@@ -16,14 +16,14 @@ class SEQGANs(nn.Module):
         self.num_filters = [100, 200, 200, 200, 200, 100, 100, 100, 100, 100, 160, 160]  # 判别器channels数量
         self.sequence_length = 20  # 句子的长度
         self.num_classes = 1  # 判别器分类类别数量（输出结点数）
-        self.embedding_size = 100  # 单词embedding大小
-        self.hidden_size_gru = 100  # GRU的隐藏层大小
+        self.embedding_size = 64  # 单词embedding大小
+        self.hidden_size_gru = 32  # GRU的隐藏层大小
         self.start_token = 0#开始token的序号
         self.start_input = torch.tensor(self.batch_size * [self.start_token]).cuda()#Generator开始的输入
         self.start_h = torch.zeros(self.batch_size, self.hidden_size_gru).cuda()#Generator开始的状态
         self.rollout_num = 10#rollout的数量
-        self.dataset = Quatrains(root_src=r'../datas/rnnpg_data_emnlp-2014/realdata_20Chars/data')#载入数据
-        self.vocab_size = self.dataset.dictionary.__len__()  # 字典大小
+        self.dataset = DataSet_Syn(root_src=r'../datas/Synthetic_Data/data.pkl')#载入数据
+        self.vocab_size = 5000  # 字典大小
         self.dataloader = DataLoader(self.dataset, batch_size=self.batch_size, shuffle=True, num_workers=2)
         self.G = Generator(self.vocab_size, self.embedding_size, self.hidden_size_gru)
         self.D = Discriminator(self.sequence_length, self.num_classes, self.vocab_size, self.embedding_size, self.filter_sizes, self.num_filters)
@@ -95,6 +95,16 @@ class SEQGANs(nn.Module):
             sequence_length=self.sequence_length,
         )
         return samples
+    def generate_data(self):
+        #这里输出的是真实数据量大小*seq_len
+        start_input = torch.tensor(self.dataset.__len__() * [self.start_token])#Generator开始的输入
+        start_h = torch.zeros(self.dataset.__len__(), self.hidden_size_gru)#Generator开始的状态
+        samples, _, _ = self.generate_X(
+            start_input=start_input,
+            start_h=start_h,
+            sequence_length=self.sequence_length,
+        )
+        return torch.transpose(samples, dim0=0, dim1=1)#return batch, seq_len
     def pretraining(self):
         loss_func = nn.NLLLoss()
         for epoch in range(1):

@@ -14,12 +14,17 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/seqGANs_pytorch$discriminator.coverage" NAME="discriminator Coverage Results" MODIFIED="1532489904500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/seqGANs_pytorch$oracle.coverage" NAME="oracle Coverage Results" MODIFIED="1536030945930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/seqGANs_pytorch$synthetic_train.coverage" NAME="synthetic_train Coverage Results" MODIFIED="1536073338287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/seqGANs_pytorch$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1532418675077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
     <SUITE FILE_PATH="coverage/seqGANs_pytorch$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1532772554993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/datas" />
     <SUITE FILE_PATH="coverage/seqGANs_pytorch$py_test_in_test_super_py.coverage" NAME="py.test in test_super.py Coverage Results" MODIFIED="1532417732193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/seqGANs_pytorch$train.coverage" NAME="train Coverage Results" MODIFIED="1533550561244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/seqGANs_pytorch$test.coverage" NAME="test Coverage Results" MODIFIED="1533259801899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
-    <SUITE FILE_PATH="coverage/seqGANs_pytorch$generator.coverage" NAME="generator Coverage Results" MODIFIED="1532596820213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/seqGANs_pytorch$synthesize_data__2_.coverage" NAME="synthesize_data (2) Coverage Results" MODIFIED="1536068076099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/seqGANs_pytorch$train.coverage" NAME="train Coverage Results" MODIFIED="1536032020026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/seqGANs_pytorch$test.coverage" NAME="test Coverage Results" MODIFIED="1535966459924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/seqGANs_pytorch$synthesize_data__1_.coverage" NAME="synthesize_data (1) Coverage Results" MODIFIED="1536040094563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models/synthetic" />
+    <SUITE FILE_PATH="coverage/seqGANs_pytorch$synthesize_data.coverage" NAME="synthesize_data Coverage Results" MODIFIED="1536038930633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/seqGANs_pytorch$generator.coverage" NAME="generator Coverage Results" MODIFIED="1536031325621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -35,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/train.py">
+      <file leaf-file-name="synthetic_train.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/synthetic_train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            <state relative-caret-position="529">
+              <caret line="53" column="57" lean-forward="false" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
               </folding>
@@ -47,64 +52,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seqGANs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/seqGANs.py">
+      <file leaf-file-name="synthetic_seqGANs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/synthetic_seqGANs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3634">
-              <caret line="184" column="8" lean-forward="false" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
+            <state relative-caret-position="1280">
+              <caret line="142" column="22" lean-forward="true" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
-                <element signature="e#2010#2019#0" expanded="false" />
-                <element signature="e#4102#4293#0" expanded="false" />
-                <element signature="e#6498#7621#0" expanded="false" />
+                <element signature="e#2129#2138#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataset.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/datas/dataset.py">
+      <file leaf-file-name="synthesize_data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/synthesize_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+            <state relative-caret-position="253">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding>
-                <element signature="e#23#59#0" expanded="true" />
+                <element signature="e#23#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/generator.py">
+      <file leaf-file-name="oracle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/oracle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <state relative-caret-position="1119">
+              <caret line="98" column="49" lean-forward="true" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
               <folding>
-                <element signature="e#23#43#0" expanded="true" />
+                <element signature="e#23#34#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="discriminator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/discriminator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-              <folding>
-                <element signature="e#23#43#0" expanded="true" />
-                <element signature="e#1573#1998#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -126,7 +106,15 @@
       <find>cuda</find>
       <find>log</find>
       <find>transpose</find>
+      <find>generate_X</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -135,12 +123,22 @@
         <option value="$PROJECT_DIR$/models/highway.py" />
         <option value="$PROJECT_DIR$/models/dataloader.py" />
         <option value="$PROJECT_DIR$/datas/dictionary.py" />
-        <option value="$PROJECT_DIR$/datas/dataset.py" />
         <option value="$PROJECT_DIR$/models/generator.py" />
-        <option value="$PROJECT_DIR$/models/test.py" />
-        <option value="$PROJECT_DIR$/models/discriminator.py" />
         <option value="$PROJECT_DIR$/models/seqGANs.py" />
+        <option value="$PROJECT_DIR$/models/discriminator.py" />
+        <option value="$PROJECT_DIR$/models/test.py" />
         <option value="$PROJECT_DIR$/models/train.py" />
+        <option value="$PROJECT_DIR$/models/synthesize.py" />
+        <option value="$PROJECT_DIR$/models/synthetic/synthetic_train.py" />
+        <option value="$PROJECT_DIR$/models/synthetic/synthesize_data.py" />
+        <option value="$PROJECT_DIR$/models/synthetic/synthetic_seqGANs.py" />
+        <option value="$PROJECT_DIR$/models/synthetic/oracle.py" />
+        <option value="$PROJECT_DIR$/models/synthetic/__init__.py" />
+        <option value="$PROJECT_DIR$/datas/dataset.py" />
+        <option value="$PROJECT_DIR$/models/synthesize_data.py" />
+        <option value="$PROJECT_DIR$/models/synthetic_seqGANs.py" />
+        <option value="$PROJECT_DIR$/models/oracle.py" />
+        <option value="$PROJECT_DIR$/models/synthetic_train.py" />
       </list>
     </option>
   </component>
@@ -172,6 +170,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,7 +192,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -209,6 +207,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WorkShop\seqGANs_pytorch\models" />
+      <recent name="D:\WorkShop\seqGANs_pytorch\models\synthetic" />
       <recent name="D:\WorkShop\seqGANs_pytorch\datas" />
     </key>
   </component>
@@ -224,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.synthetic_train">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,45 +244,26 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="synthesize_data (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/datas" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models/synthetic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="seqGANs_pytorch" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/datas/dataset.py" />
+      <option name="SCRIPT_NAME" value="D:\WorkShop\seqGANs_pytorch\models\synthesize_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="discriminator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="seqGANs_pytorch" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/discriminator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="synthesize_data (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -295,18 +276,37 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="seqGANs_pytorch" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/generator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/synthesize_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="synthesize_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="seqGANs_pytorch" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\WorkShop\seqGANs_pytorch\models\synthesize_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="synthetic_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
         <env name="CUDA_VISIBLE_DEVICES" value="1" />
+        <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
@@ -315,7 +315,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="seqGANs_pytorch" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/synthetic_train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -343,19 +343,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Python.discriminator" />
-      <item index="2" class="java.lang.String" itemvalue="Python.train" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test" />
-      <item index="4" class="java.lang.String" itemvalue="Python.generator" />
-      <item index="5" class="java.lang.String" itemvalue="Python.dataset" />
+      <item index="1" class="java.lang.String" itemvalue="Python.train" />
+      <item index="2" class="java.lang.String" itemvalue="Python.synthesize_data" />
+      <item index="3" class="java.lang.String" itemvalue="Python.synthesize_data (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.synthesize_data (2)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.synthetic_train" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.train" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dataset" />
-        <item index="3" class="java.lang.String" itemvalue="Python.generator" />
-        <item index="4" class="java.lang.String" itemvalue="Python.discriminator" />
+        <item index="0" class="java.lang.String" itemvalue="Python.synthetic_train" />
+        <item index="1" class="java.lang.String" itemvalue="Python.synthesize_data (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.synthesize_data (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.synthesize_data" />
+        <item index="4" class="java.lang.String" itemvalue="Python.train" />
       </list>
     </recent_temporary>
   </component>
@@ -386,66 +386,52 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3297062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.086886995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08742005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08742005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.086886995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0858209" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39891306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,171 +474,149 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/test.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/test.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/models/test.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="163" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/train.py</url>
-          <line>37</line>
+          <line>49</line>
           <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/seqGANs.py</url>
-          <line>217</line>
-          <option name="timeStamp" value="183" />
+          <line>180</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/test.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="251" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/seqGANs.py</url>
+          <line>213</line>
+          <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/seqGANs.py</url>
           <line>218</line>
-          <option name="timeStamp" value="184" />
+          <option name="timeStamp" value="253" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/models/seqGANs.py</url>
-          <line>219</line>
-          <option name="timeStamp" value="185" />
+          <line>25</line>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/datas/dataset.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/synthesize_data.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/oracle.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/oracle.py</url>
+          <line>106</line>
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/oracle.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="292" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="186" />
+      <option name="time" value="293" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.state_dict()" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>torch.ones(x_batch_pos.size()[0], 1).cuda()</expression-string>
+        <expression-string>param</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>torch.zeros(x_batch_pos.size()[0], 1).cuda()</expression-string>
+        <expression-string>self.state_dict()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pre_neg</expression-string>
+        <expression-string>self.parameters()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pre_pos</expression-string>
+        <expression-string>dataset_gen.__len__()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>~is_epoch</expression-string>
+        <expression-string>model.state_dict()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>torch.ones(self.batch_size, 1).cuda()</expression-string>
+        <expression-string>data[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>torch.zeros(self.batch_size, 1).cuda()</expression-string>
+        <expression-string>result[2509][15]==samples[15][2509]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>torch.ones(self.batch_size, 1)</expression-string>
+        <expression-string>result[2509][15]==samples[0][2509]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>torch.log(output[24][0])</expression-string>
+        <expression-string>result[2509][0]==samples[0][2509]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>result[2509][0]==samples[0][0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/datas/dataloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datas/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding>
-            <element signature="e#23#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding>
-            <element signature="e#23#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/discriminator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding>
-            <element signature="e#23#43#0" expanded="true" />
-            <element signature="e#1573#1998#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/nn/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="1536" column="0" lean-forward="false" selection-start-line="1536" selection-start-column="0" selection-end-line="1536" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/seqGANs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3634">
-          <caret line="184" column="8" lean-forward="false" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
-          <folding>
-            <element signature="e#23#34#0" expanded="true" />
-            <element signature="e#2010#2019#0" expanded="false" />
-            <element signature="e#4102#4293#0" expanded="false" />
-            <element signature="e#6498#7621#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-          <folding>
-            <element signature="e#23#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -669,9 +633,7 @@
           <caret line="184" column="8" lean-forward="false" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
-            <element signature="e#2010#2019#0" expanded="false" />
-            <element signature="e#4102#4293#0" expanded="false" />
-            <element signature="e#6498#7621#0" expanded="false" />
+            <element signature="e#2172#2181#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -691,7 +653,7 @@
         <state relative-caret-position="46">
           <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding>
-            <element signature="e#23#43#0" expanded="true" />
+            <element signature="e#23#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,8 +663,8 @@
         <state relative-caret-position="299">
           <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
           <folding>
-            <element signature="e#23#43#0" expanded="true" />
-            <element signature="e#1573#1998#0" expanded="false" />
+            <element signature="e#23#43#0" expanded="false" />
+            <element signature="e#1512#1937#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -711,7 +673,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -731,9 +695,7 @@
           <caret line="213" column="27" lean-forward="true" selection-start-line="213" selection-start-column="27" selection-end-line="213" selection-end-column="27" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
-            <element signature="e#2010#2019#0" expanded="false" />
-            <element signature="e#4102#4293#0" expanded="false" />
-            <element signature="e#6498#7621#0" expanded="false" />
+            <element signature="e#2172#2181#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,7 +715,7 @@
         <state relative-caret-position="46">
           <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding>
-            <element signature="e#23#43#0" expanded="true" />
+            <element signature="e#23#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -763,8 +725,8 @@
         <state relative-caret-position="299">
           <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
           <folding>
-            <element signature="e#23#43#0" expanded="true" />
-            <element signature="e#1573#1998#0" expanded="false" />
+            <element signature="e#23#43#0" expanded="false" />
+            <element signature="e#1512#1937#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -773,7 +735,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -793,9 +757,7 @@
           <caret line="64" column="4" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
-            <element signature="e#2010#2019#0" expanded="false" />
-            <element signature="e#4102#4293#0" expanded="false" />
-            <element signature="e#6498#7621#0" expanded="false" />
+            <element signature="e#2172#2181#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,7 +767,7 @@
         <state relative-caret-position="207">
           <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="27" />
           <folding>
-            <element signature="e#23#43#0" expanded="true" />
+            <element signature="e#23#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -815,8 +777,8 @@
         <state relative-caret-position="736">
           <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="42" />
           <folding>
-            <element signature="e#23#43#0" expanded="true" />
-            <element signature="e#1573#1998#0" expanded="false" />
+            <element signature="e#23#43#0" expanded="false" />
+            <element signature="e#1512#1937#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -825,7 +787,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -897,20 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/utils/data/dataloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2176">
-          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/nn/modules/rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="498" column="0" lean-forward="false" selection-start-line="498" selection-start-column="0" selection-end-line="498" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/-1228414330/visdom/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -932,10 +882,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datas/dictionary.py">
+    <entry file="file://$PROJECT_DIR$/datas/dataloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+        <state relative-caret-position="23">
+          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/serialization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/discriminator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="e#1512#1937#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/nn/functional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="1075" column="0" lean-forward="false" selection-start-line="1075" selection-start-column="0" selection-end-line="1075" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -944,79 +919,142 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="531" column="0" lean-forward="false" selection-start-line="531" selection-start-column="0" selection-end-line="531" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datas/dataloader.py">
+    <entry file="file://$PROJECT_DIR$/datas/dictionary.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="227">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        <state relative-caret-position="874">
+          <caret line="38" column="61" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="61" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/synthetic/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/datas/dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="27" column="15" lean-forward="false" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-          <folding>
-            <element signature="e#23#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding>
-            <element signature="e#23#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/discriminator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding>
-            <element signature="e#23#43#0" expanded="true" />
-            <element signature="e#1573#1998#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/nn/functional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="1536" column="0" lean-forward="false" selection-start-line="1536" selection-start-column="0" selection-end-line="1536" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/seqGANs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3634">
-          <caret line="184" column="8" lean-forward="false" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
+        <state relative-caret-position="-69">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
-            <element signature="e#2010#2019#0" expanded="false" />
-            <element signature="e#4102#4293#0" expanded="false" />
-            <element signature="e#6498#7621#0" expanded="false" />
+            <element signature="e#2172#2181#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state relative-caret-position="414">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/utils/data/dataloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="177" column="0" lean-forward="false" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/nn/init.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datas/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
+          <folding>
+            <element signature="e#23#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/remote_sources/355964636/1758441939/torch/nn/modules/rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="754" column="12" lean-forward="true" selection-start-line="754" selection-start-column="12" selection-end-line="754" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/355964636/torch/_C/_TensorBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1654" column="8" lean-forward="false" selection-start-line="1654" selection-start-column="8" selection-end-line="1654" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/synthesize_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="e#23#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/synthetic_seqGANs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1280">
+          <caret line="142" column="22" lean-forward="true" selection-start-line="142" selection-start-column="22" selection-end-line="142" selection-end-column="22" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+            <element signature="e#2129#2138#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/oracle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1119">
+          <caret line="98" column="49" lean-forward="true" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/synthetic_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="53" column="57" lean-forward="false" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
           </folding>
