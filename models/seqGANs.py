@@ -14,7 +14,6 @@ class SEQGANs(nn.Module):
         self.batch_size = 64#batch的大小
         self.filter_sizes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20]  # 判别器的窗口大小（也即每个窗口包含多少个单词）
         self.num_filters = [100, 200, 200, 200, 200, 100, 100, 100, 100, 100, 160, 160]  # 判别器channels数量
-        self.sequence_length = 20  # 句子的长度
         self.num_classes = 1  # 判别器分类类别数量（输出结点数）
         self.embedding_size = 100  # 单词embedding大小
         self.hidden_size_gru = 100  # GRU的隐藏层大小
@@ -22,12 +21,13 @@ class SEQGANs(nn.Module):
         self.start_input = torch.tensor(self.batch_size * [self.start_token]).cuda()#Generator开始的输入
         self.start_h = torch.zeros(self.batch_size, self.hidden_size_gru).cuda()#Generator开始的状态
         self.rollout_num = 10#rollout的数量
-        self.dataset = Quatrains(root_src=r'../datas/rnnpg_data_emnlp-2014/realdata_20Chars/data')#载入数据
+        self.dataset = Quatrains(root_src=r'../datas/rnnpg_data_emnlp-2014/realdata_20Chars/data_nofixedlength')#载入数据
+        self.sequence_length = self.dataset.max_doclen + 1  # 最大的句子长度+1(算上end token)
         self.vocab_size = self.dataset.dictionary.__len__()  # 字典大小
-        self.dataloader = DataLoader(self.dataset, batch_size=self.batch_size, shuffle=True, num_workers=2)
+        self.dataloader = DataLoader(self.dataset, batch_size=self.batch_size, shuffle=False, num_workers=2)
         self.G = Generator(self.vocab_size, self.embedding_size, self.hidden_size_gru)
         self.D = Discriminator(self.sequence_length, self.num_classes, self.vocab_size, self.embedding_size, self.filter_sizes, self.num_filters)
-        self.embeddings = nn.Embedding(num_embeddings=self.vocab_size, embedding_dim=self.embedding_size)
+        self.embeddings = nn.Embedding(num_embeddings=self.vocab_size, embedding_dim=self.embedding_size, padding_idx=1)
         self.pre_optimizer = torch.optim.Adam([
             {'params': self.G.parameters()},
             {'params': self.embeddings.parameters()}
@@ -96,7 +96,7 @@ class SEQGANs(nn.Module):
         )
         return samples
     def pretraining(self):
-        loss_func = nn.NLLLoss()
+        loss_func = nn.NLLLoss(ignore_index=1)
         for epoch in range(1):
             time1 = time.time()
             total_loss = 0.0

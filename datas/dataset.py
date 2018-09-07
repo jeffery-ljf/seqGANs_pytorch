@@ -7,20 +7,28 @@ import numpy as np
 class Quatrains(Dataset):
     def __init__(self, root_src):
         '''
-
         :param root_src: src with all quatrains
         '''
         self.root_src = root_src
         self.dictionary = Dictionary(root_src)
         self.dictionary.build()
+        self.max_doclen = self.get_maxlen()
         data = []
         for doc in self.dictionary.data:
             doc_data = []
             for word in doc:
                 doc_data.append(self.dictionary.word2id[word])
+            while doc_data.__len__() != self.max_doclen+1:#为doc_data补全1，直到所有句子的最大长度+1为止。
+                doc_data.append(1)
             data.append(doc_data)
-        self.data = torch.tensor(data)
+        self.data = torch.tensor(data)#data的每一行是由原句+end token的id组成的，start token不在里面。
         print('Reading data is fine !')
+    def get_maxlen(self):#获得data中所有句子的最大长度
+        words_count = []
+        for doc in self.dictionary.data:
+            words_count.append(doc.__len__())
+        words_count = np.array(words_count)
+        return words_count.max()
     def __len__(self):
         return self.data.__len__()
     def show(self, data):

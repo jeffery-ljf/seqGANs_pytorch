@@ -14,20 +14,19 @@ class Dictionary():
                 for word in line.split():
                     temp.append(word)
             self.data.append(temp)
-        self.data = np.array(self.data)
     def __len__(self):
         if self.id2word.__len__()==self.word2id.__len__():
             return self.id2word.__len__()
         else:
             raise RuntimeError('dictionary size error')
     def build(self):
-        temp = []
-        wordcount = []
+        temp = []#存放单词，唯一
+        wordcount = []#存放单词以及它的频数
         for doc in self.data:
             for word in doc:
                 if word in temp:
-                    id = temp.index(word)
-                    if wordcount[id][0]==temp[id]:
+                    id = temp.index(word)#找出索引
+                    if wordcount[id][0]==temp[id]:#计算频数
                         wordcount[id][1] = wordcount[id][1]+1
                     else:
                         raise RuntimeError('dictionary operation error')
@@ -35,11 +34,13 @@ class Dictionary():
                     temp.append(word)
                     wordcount.append([word,0])
 
-        wordcount.sort(key=lambda item: item[1], reverse=True)
-        self.id2word.append('start token')
-        self.word2id['start token'] = 0
-        for id in range(1, wordcount.__len__()+1):
-            word = wordcount[id-1][0]
+        wordcount.sort(key=lambda item: item[1], reverse=True)#按照频数排序
+        self.id2word.append('start token')#加入start token
+        self.word2id['start token'] = 0#为start token安排'0'id
+        self.id2word.append('end token')#加入end token
+        self.word2id['end token'] = 1#为end token安排'1'id
+        for id in range(2, wordcount.__len__()+2):
+            word = wordcount[id-2][0]
             self.id2word.append(word)
             self.word2id[word] = id
         print('Successfully building the dictionary !')
