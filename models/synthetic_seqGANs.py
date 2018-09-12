@@ -18,8 +18,8 @@ class SEQGANs_syn(nn.Module):
         self.num_classes = 1  # 判别器分类类别数量（输出结点数）
         self.embedding_size = 64  # 单词embedding大小
         self.hidden_size_gru = 32  # GRU的隐藏层大小
-        self.start_token = 0#开始token的序号
-        self.start_input = torch.tensor(self.batch_size * [self.start_token]).cuda()#Generator开始的输入
+        self.start_idx = 0#开始token的序号
+        self.start_input = torch.tensor(self.batch_size * [self.start_idx]).cuda()#Generator开始的输入
         self.start_h = torch.zeros(self.batch_size, self.hidden_size_gru).cuda()#Generator开始的状态
         self.rollout_num = 10#rollout的数量
         self.dataset = DataSet_Syn(root_src=r'../datas/Synthetic_Data/data.pkl')#载入数据
@@ -97,7 +97,7 @@ class SEQGANs_syn(nn.Module):
         return samples
     def generate_data(self):
         #这里输出的是真实数据量大小*seq_len
-        start_input = torch.tensor(self.dataset.__len__() * [self.start_token])#Generator开始的输入
+        start_input = torch.tensor(self.dataset.__len__() * [self.start_idx])#Generator开始的输入
         start_h = torch.zeros(self.dataset.__len__(), self.hidden_size_gru)#Generator开始的状态
         samples, _, _ = self.generate_X(
             start_input=start_input,
@@ -122,7 +122,7 @@ class SEQGANs_syn(nn.Module):
                     )
                 else:
                     predictions = self.generate_pretrained(  # predictions: seq_len * batch * vocab_size
-                        start_input=torch.tensor(x_batch.size()[0] * [self.start_token]).cuda(),
+                        start_input=torch.tensor(x_batch.size()[0] * [self.start_idx]).cuda(),
                         start_h=torch.zeros(x_batch.size()[0], self.hidden_size_gru).cuda(),
                         sequence_length=self.sequence_length,
                         groundtrues=x_groundtrues
@@ -134,7 +134,7 @@ class SEQGANs_syn(nn.Module):
                 total_loss += loss.item()
                 loss.backward()
                 self.pre_optimizer.step()
-            total_loss = total_loss/i
+            total_loss = total_loss/(i+1)
             #输出loss和生成的字符
 
             time2 = time.time()
@@ -205,7 +205,7 @@ class SEQGANs_syn(nn.Module):
                 )
             else:#如果dataloader抽出来的不满足batch_size的大小要求
                 x_batch_neg, _, _ = self.generate_X(
-                    start_input=torch.tensor(x_batch_pos.size()[0] * [self.start_token]).cuda(),
+                    start_input=torch.tensor(x_batch_pos.size()[0] * [self.start_idx]).cuda(),
                     start_h=torch.zeros(x_batch_pos.size()[0], self.hidden_size_gru).cuda(),
                     sequence_length=self.sequence_length
                 )
@@ -232,7 +232,7 @@ class SEQGANs_syn(nn.Module):
                 self.D_optimizer.step()
             if not is_epoch:
                 return  total_loss#只训练一个batch
-        total_loss = total_loss/i
+        total_loss = total_loss/(i+1)
         return total_loss
 
 
