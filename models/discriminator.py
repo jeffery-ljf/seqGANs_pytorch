@@ -35,7 +35,6 @@ class Discriminator(nn.Module):
             output = t*g+(1.-t)*input_
             return output
     def forward(self, input):
-        input = input
         result = []
         for i in range(self.conv_pools.__len__()):
             result.append(self.conv_pools[i](input))

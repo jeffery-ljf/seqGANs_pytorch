@@ -13,9 +13,9 @@ class Oracle(nn.Module):
         self.embedding_size = 64
         self.hidden_size_gru = 32  # GRU的隐藏层大小
         self.sequence_length = 20  # 句子的长度
-        self.start_token = 0  # 开始token的序号
+        self.start_idx = 0  # 开始token的序号
         self.batch_size = 10000#生成数据时的batch
-        self.start_input = torch.tensor(self.batch_size * [self.start_token])#Generator开始的输入
+        self.start_input = torch.tensor(self.batch_size * [self.start_idx])#Generator开始的输入
         self.start_h = torch.zeros(self.batch_size, self.hidden_size_gru)#Generator开始的状态
         self.embeddings = nn.Embedding(num_embeddings=self.vocab_size, embedding_dim=self.embedding_size)
         self.G = Generator(self.vocab_size, self.embedding_size, self.hidden_size_gru)
@@ -90,7 +90,7 @@ class Oracle(nn.Module):
                 )
             else:
                 predictions = self.generate_pretrained(  # predictions: seq_len * batch * vocab_size
-                    start_input=torch.tensor(x_batch.size()[0] * [self.start_token]).cuda(),
+                    start_input=torch.tensor(x_batch.size()[0] * [self.start_idx]).cuda(),
                     start_h=torch.zeros(x_batch.size()[0], self.hidden_size_gru).cuda(),
                     sequence_length=self.sequence_length,
                     groundtrues=x_groundtrues

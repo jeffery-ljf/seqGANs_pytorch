@@ -6,6 +6,7 @@ import visdom
 from seqGANs import SEQGANs
 from datas.dataset import Quatrains
 from torch.utils.data import DataLoader
+from datas.dictionary import Dictionary_Quatrains, Dictionary_Obama
 def validate_G(model, epoch, win, vis):
     text_list = model.dataset.show(model.show_G())
     text = str(epoch) + ': '
@@ -34,21 +35,8 @@ for i in range(500):
     optimizer.step()
     print(l2_loss)
 '''
-vis = visdom.Visdom(port=2424, env='temp')
-seqGANs = SEQGANs().cuda()
-seqGANs.load_state_dict(torch.load('../save/completed_500.pkl'))
-text_list = seqGANs.dataset.show(seqGANs.show_G())
-for i in range(10000):
-    time1 = time.time()
-    J = seqGANs.backward_G()
-    D_loss = seqGANs.backward_D(update=False, loss_f='MSE')
-    validate_G(seqGANs, i, 'GANs_samples', vis)
-    print(str(i)+': '+str(time.time()-time1))
-    print("G_loss: " + str(J))
-    print("D_loss: " + str(D_loss))
-    vis.line(X=torch.cat([torch.tensor([[i]]), torch.tensor([[i]])], 1), Y=torch.cat(
-        [torch.unsqueeze(torch.unsqueeze(torch.tensor(J), 0), 0),
-         torch.unsqueeze(torch.unsqueeze(torch.tensor(D_loss), 0), 0)], 1), win='GD_loss',
-             opts=dict(legend=['G_loss', 'D_loss']),
-             update='append' if i > 0 else None)
-print()
+# vis = visdom.Visdom(port=2424, env='temp')
+# seqGANs = SEQGANs().cuda()
+# seqGANs.load_state_dict(torch.load('../save/completed_450.pkl'))
+# text_list = seqGANs.dataset.show(seqGANs.show_G())
+# validate_G(seqGANs, 0, 'GANs_samples', vis)
