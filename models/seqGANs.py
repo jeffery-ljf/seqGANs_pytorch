@@ -11,7 +11,7 @@ class SEQGANs(nn.Module):
     def __init__(self):
         super().__init__()
         self.l2_reg_lambda = 0.2
-        self.batch_size = 64#batch的大小
+        self.batch_size = 8#batch的大小,为1的时候，过程有使用unsqueeze，可能会出错
         self.filter_sizes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20]  # 判别器的窗口大小（也即每个窗口包含多少个单词）
         self.num_filters = [100, 200, 200, 200, 200, 100, 100, 100, 100, 100, 160, 160]  # 判别器channels数量
         self.num_classes = 1  # 判别器分类类别数量（输出结点数）
@@ -23,7 +23,7 @@ class SEQGANs(nn.Module):
         self.start_input = torch.tensor(self.batch_size * [self.start_idx]).cuda()#Generator开始的输入
         self.start_h = torch.zeros(self.batch_size, self.hidden_size_gru).cuda()#Generator开始的状态
         self.rollout_num = 10#rollout的数量
-        self.dataset = Quatrains(root_src=r'../datas/rnnpg_data_emnlp-2014/realdata_20Chars/data', start_idx=self.start_idx, end_idx=self.end_idx, padding_idx=self.padding_idx)#载入真实数据
+        self.dataset = DataSet_Obama(root_src=r'../datas/obama/input.txt', start_idx=self.start_idx, end_idx=self.end_idx, padding_idx=self.padding_idx)#载入真实数据
         self.sequence_length = self.dataset.max_doclen + 1  # 真实数据集的最大句子长度+1(算上end token)
         self.vocab_size = self.dataset.dictionary.__len__()  # 字典大小
         self.dataloader = DataLoader(self.dataset, batch_size=self.batch_size, shuffle=False, num_workers=2)

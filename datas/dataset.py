@@ -42,13 +42,13 @@ class Quatrains(Dataset):
     def __getitem__(self, item):
         return self.data[item]
 class DataSet_Obama(Dataset):
-    def __init__(self, root_src, end_idx, padding_idx):
+    def __init__(self, root_src, start_idx, end_idx, padding_idx):
         '''
         :param root_src: src with all quatrains
         :param padding_idx: idx of padding token
         '''
         self.root_src = root_src
-        self.dictionary = Dictionary_Obama(root_src)
+        self.dictionary = Dictionary_Obama(root_src, start_idx, end_idx, padding_idx)
         self.dictionary.build()
         self.max_doclen = self.get_maxlen()
         data = []

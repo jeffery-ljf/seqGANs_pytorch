@@ -22,9 +22,9 @@ if __name__ == '__main__':
     vis = visdom.Visdom(port=2424, env='seqGANs')
     seqGANs = SEQGANs().cuda()
     start_epoch = 0
-    seqGANs.load_state_dict(torch.load('../save_pretrained/pretrained_900.pkl'))
+    seqGANs.load_state_dict(torch.load('../save_pretrained/pretrained_450.pkl'))
     '''
-    for j in range(1000):
+    for j in range(500):
         time1 = time.time()
         total_loss = seqGANs.pretraining()
         validate_G(seqGANs, j, 'pre_samples', vis)
@@ -32,11 +32,11 @@ if __name__ == '__main__':
                       opts=dict(legend=['G_pre_loss']), update='append' if j > 0 else None)
         time2 = time.time()
         print('total_loss : ' + str(total_loss) + '   Times: ' + str(time2 - time1))
-        if j%100==0:
+        if j%50==0:
             torch.save(seqGANs.state_dict(), '../save_pretrained/pretrained_'+str(j)+'.pkl')
     '''
     seqGANs.backward_D(loss_f='MSE', is_epoch=True)#carryon的时候要注释掉
-    for i in range(start_epoch, start_epoch+4000):
+    for i in range(start_epoch, start_epoch+10000):
         time1 = time.time()
         J = seqGANs.backward_G()
         D_loss = seqGANs.backward_D(loss_f='MSE')
